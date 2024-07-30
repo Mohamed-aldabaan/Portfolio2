@@ -33,6 +33,6 @@
     
    4. Starte die Entwicklungsumgebung:
       ```bash
-       
+       npm run dev
       ```
 
