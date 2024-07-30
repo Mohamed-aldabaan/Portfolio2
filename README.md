@@ -18,8 +18,16 @@
   
   Um dieses Projekt lokal auszuführen, führe die folgenden Schritte aus:
    1. Klone das Repository:
-   ```bash
-    git clone https://github.com/Mohamed-aldabaan/Portfolio2.git
-
-   ```
+      ```bash
+      git clone https://github.com/Mohamed-aldabaan/Portfolio2.git
+      ```
+   2. Wechsle in das Projektverzeichnis:
+      ```bash
+       cd Portfolio2
+      ```
+    
+   3. Installiere die Abhängigkeiten:
+      ```bash
+       npm install
+      ```
 
