@@ -31,7 +31,7 @@
        npm install
       ```
     
-    4. Starte die Entwicklungsumgebung:
+   4. Starte die Entwicklungsumgebung:
       ```bash
        
       ```
