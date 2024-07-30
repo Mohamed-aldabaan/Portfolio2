@@ -8,8 +8,8 @@
 ### Inhalt
  
  In diesem Projekt werde ich folgende Themen behandeln:
- - 
- - 
- - 
- -
- 
+ - Erstellen von Komponenten
+ - Verwenden von Props und State
+ - Arbeiten mit Hooks
+ - Routing mit React Router
+
