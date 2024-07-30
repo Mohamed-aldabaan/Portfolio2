@@ -1,3 +1,4 @@
+# Das projekt befindet sich zurzeit in Bearbeitung 31.07.24
 ## Portfolio2
  Dieses Projekt wurde erstellt, um meine Fähigkeiten in React zu erlernen und zu verbessern. Es handelt sich um ein Portfolio-Projekt, in dem ich verschiedene Aspekte und Best Practices von React anwende.
 
@@ -12,4 +13,13 @@
  - Verwenden von Props und State
  - Arbeiten mit Hooks
  - Routing mit React Router
+
+ ### Installation
+  
+  Um dieses Projekt lokal auszuführen, führe die folgenden Schritte aus:
+   1. Klone das Repository:
+   ```bash
+    git clone https://github.com/Mohamed-aldabaan/Portfolio2.git
+
+   ```
 
