@@ -5,3 +5,11 @@
  Das Hauptziel dieses Projekts ist es, praktische Erfahrungen mit React zu sammeln und ein besseres Verständnis für die Entwicklung von Webanwendungen mit dieser beliebten JavaScript-Bibliothek zu erlangen.
 
 
+### Inhalt
+ 
+ In diesem Projekt werde ich folgende Themen behandeln:
+ - 
+ - 
+ - 
+ -
+ 
