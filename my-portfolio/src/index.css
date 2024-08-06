@@ -61,7 +61,7 @@ button:active{
   transform: scale(0.85);
 }
 
-/* ===========================  000. Media Query ================================  */
+/* ===========================  000. Responsive Design / Media Query ================================  */
 
 @media (max-width: 1000px){
   .container{
