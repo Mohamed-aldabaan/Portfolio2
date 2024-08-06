@@ -1,32 +1,71 @@
-header.flex{
-    justify-content: space-between;
-    padding: 0 2rem;
+header.flex {
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-top: 1rem;
 }
 
-header.flex nav{
-    background-color: var(--bgHeader);
-    padding: 0.7rem 1rem;
-    border-radius: 50px;
+header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.7rem 1rem;
+  border-radius: 50px;
+  box-shadow: 1px 1px 3px rgba(169, 98, 98, 0.544);
 }
-header ul.flex{
-    gap: 1rem;
+header ul.flex {
+  gap: 1rem;
 }
-header ul li a{
-     display: inline-block;/* wenn scale ändern möchte*/
-    color: var(--title);
-    opacity: 0.8;
-    font-size: 0.8rem;
-    font-weight: 500;
-    /* transition: transform 0.3s ease; */
-    
+header ul li a {
+  display: inline-block; /* wenn scale ändern möchte*/
+  color: var(--title);
+  opacity: 0.8;
+  font-size: 0.8rem;
+  font-weight: 500;
+  /* transition: transform 0.3s ease; */
 }
-header ul li a:hover{
-    opacity: 1;
-    color: var(--blue);
-    font-size: 0.9rem;
-    /* transform: scale(0.5); */
+header ul li a:hover {
+  opacity: 1;
+  color: var(--blue);
+  font-size: 0.9rem;
+  /* transform: scale(0.5); */
 }
 
-header button{
-    font-size: 1.2rem;
+header button {
+  font-size: 1.2rem;
+}
+header button.menu {
+  display: none;
+}
+
+/* pop up */
+header .fixed {
+    position: fixed;
+  inset: 0px;
+  background-color: rgba(41, 38, 45, 0.8);
+  z-index: 100;
+}
+
+header .fixed ul.modal {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0.25px 1px 1px rgba(169, 98, 98, 0.544);
+  width: 85%;
+  margin: 2rem auto 0 auto ;
+  padding: 2rem;
+  background-color: var(--secondary);
+}
+
+header .fixed ul.modal li{
+    border-bottom: 1px solid var(--border);
+    padding: .7rem 0;
+}
+header .fixed ul.modal li:last-child{
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header button.menu {
+    display: block;
+  }
 }
