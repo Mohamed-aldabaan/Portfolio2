@@ -35,12 +35,27 @@ header button.menu {
   display: none;
 }
 
-/* pop up */
+/* ==================  pop up ======================= */
 header .fixed {
-    position: fixed;
+  position: fixed;
   inset: 0px;
-  background-color: rgba(41, 38, 45, 0.8);
+  background-color: rgba(38, 37, 39, 0.8);
   z-index: 100;
+}
+
+@keyframes popup{
+    0%{
+        transform: scale(0);
+        opacity: 0.1;
+        background-color: #b49a6da0;
+    }
+    50%{
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 header .fixed ul.modal {
@@ -51,11 +66,19 @@ header .fixed ul.modal {
   margin: 2rem auto 0 auto ;
   padding: 2rem;
   background-color: var(--secondary);
+  animation: popup 1.5s  ease;
 }
 
 header .fixed ul.modal li{
     border-bottom: 1px solid var(--border);
     padding: .7rem 0;
+}
+header .fixed ul.modal li:first-child{
+    border-bottom: none;
+    text-align: right;
+    padding: 0;
+    margin-bottom: -10px;
+    
 }
 header .fixed ul.modal li:last-child{
     border-bottom: none;
