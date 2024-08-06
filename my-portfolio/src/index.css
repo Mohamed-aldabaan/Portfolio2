@@ -25,6 +25,7 @@ body {
   width: 80%;
   margin: 0 auto;
   background-color: var(--secondary);
+  padding: 0 3rem;
 }
 
 .divider {
@@ -58,4 +59,19 @@ button:hover{
 }
 button:active{
   transform: scale(0.85);
+}
+
+/* ===========================  000. Media Query ================================  */
+
+@media (max-width: 1000px){
+  .container{
+    width: 90%;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 500px){
+  .container{
+    width: 98%;
+    padding: 0 1rem;
+  }
 }
