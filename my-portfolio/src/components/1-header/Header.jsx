@@ -7,13 +7,11 @@ export default function Header() {
   return (
     <header className=" flex">
       <button
-        className="menu"
+        className="menu icon-menu"
         onClick={() => {
           setShowModal(true);
         }}
-      >
-        show model
-      </button>
+      />
       <div />
       <nav>
         <ul className="flex">
@@ -34,12 +32,17 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <button>light</button>
+      <button className="mode">
+        <span className="icon-moon-o" />
+      </button>
       {showModal && (
         <div className="fixed">
           <ul className="modal  ">
-            <li >
-              <button className="border" onClick={() => setShowModal(false)}>close</button>
+            <li>
+              <button
+                className="icon-close"
+                onClick={() => setShowModal(false)}
+              />
             </li>
             <li>
               <a href="">About</a>

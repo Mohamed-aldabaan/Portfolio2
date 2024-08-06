@@ -14,7 +14,7 @@ header ul.flex {
   gap: 1rem;
 }
 header ul li a {
-  display: inline-block; /* wenn scale ändern möchte*/
+  /* display: inline-block;  wenn scale ändern möchte*/
   color: var(--title);
   opacity: 0.8;
   font-size: 0.8rem;
@@ -34,6 +34,22 @@ header button {
 header button.menu {
   display: none;
 }
+/* ==================  iconButton ======================= */
+ header .icon-menu, header button.mode{
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgba(84, 79, 55, 0.8);
+    color: var(--subtitle);
+    transition: .3s;
+ }
+ header .icon-menu:hover, header button.mode:hover{
+    border: 1px solid rgba(130, 116, 48, 0.8);
+    color: var(--title);
+    background-color: #cd624b26;
+ }
 
 /* ==================  pop up ======================= */
 header .fixed {

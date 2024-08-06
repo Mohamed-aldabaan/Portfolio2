@@ -49,3 +49,13 @@ a{
 .border{
   border: 1px solid red;
 }
+
+button{
+  all: unset;
+}
+button:hover{
+  cursor: pointer;;
+}
+button:active{
+  transform: scale(0.85);
+}
