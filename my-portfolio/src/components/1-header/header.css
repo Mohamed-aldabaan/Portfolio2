@@ -1,0 +1,32 @@
+header.flex{
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+header.flex nav{
+    background-color: var(--bgHeader);
+    padding: 0.7rem 1rem;
+    border-radius: 50px;
+}
+header ul.flex{
+    gap: 1rem;
+}
+header ul li a{
+     display: inline-block;/* wenn scale ändern möchte*/
+    color: var(--title);
+    opacity: 0.8;
+    font-size: 0.8rem;
+    font-weight: 500;
+    /* transition: transform 0.3s ease; */
+    
+}
+header ul li a:hover{
+    opacity: 1;
+    color: var(--blue);
+    font-size: 0.9rem;
+    /* transform: scale(0.5); */
+}
+
+header button{
+    font-size: 1.2rem;
+}

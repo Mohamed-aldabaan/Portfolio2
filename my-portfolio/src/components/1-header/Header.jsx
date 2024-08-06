@@ -1,11 +1,11 @@
-import React from "react";
+// import React from "react";
 import "./header.css";
 
 export default function Header() {
   return (
-    <header>
+    <header className=" flex">
       <nav>
-        <ul>
+        <ul className="flex">
           <li>
             <a href="">About</a>
           </li>
@@ -23,6 +23,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <button>light</button>
     </header>
   );
 }

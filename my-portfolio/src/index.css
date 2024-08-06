@@ -3,6 +3,10 @@
   --primary: #000000;
   --secondary: rgb(25, 25, 26);
   --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244, 244, 244);
+  --subtitle: rgb(153, 153, 153);
+  --bgHeader: rgb(39, 39, 41);
+  --blue: rgb(93, 188, 252)
 }
 html,
 * {
@@ -26,4 +30,22 @@ body {
 .divider {
   border-bottom: 2px solid var(--border);
   margin: 1rem 0;
+}
+
+li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  transition: 0.2s;
+
+}
+
+.flex{
+  display: flex;
+  align-items: center; 
+}
+
+.border{
+  border: 1px solid red;
 }
