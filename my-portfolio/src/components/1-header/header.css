@@ -1,8 +1,8 @@
 /* ================== Table of Content =======================
-1. Header Design
-2. Icon Button
-3. Pop Up
-4. Media Query
+        1. Header Design
+        2. Icon Button
+        3. Pop Up
+        4. Media Query
 */
 
 /* ===========================  1. Header Design ================================  */
@@ -67,7 +67,7 @@ header .icon-close {
 }
 header .icon-close:hover {
   transform: scale(1.1) rotate(180deg);
-  color: red;
+  color: rgba(255, 68, 68, 0.71);
 }
 
 /* ===========================  3. pop up ================================  */
