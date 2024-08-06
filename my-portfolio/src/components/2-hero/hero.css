@@ -10,5 +10,9 @@ section.hero .left-article{
 
 section.hero .profile{
     width: 20%;
+    border-radius: 10%;
+    border: 1px solid orange;
+    padding: 3px;
+    box-shadow: 2px 2px 30px rgb(149, 112, 144) inset;
 }
 
