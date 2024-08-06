@@ -1,3 +1,8 @@
+
+section.hero{
+    margin: 3rem 0;
+}
 section.hero .left-article{
     flex-grow: 1;
 }
+
