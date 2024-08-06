@@ -1,3 +1,11 @@
+/* ================== Table of Content =======================
+1. Header Design
+2. Icon Button
+3. Pop Up
+4. Media Query
+*/
+
+/* ===========================  1. Header Design ================================  */
 header.flex {
   justify-content: space-between;
   padding: 0 2rem;
@@ -34,24 +42,35 @@ header button {
 header button.menu {
   display: none;
 }
-/* ==================  iconButton ======================= */
- header .icon-menu, header button.mode{
-    background-color: var(--bgHeader);
-    height: 2.4rem;
-    width: 2.4rem;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid rgba(84, 79, 55, 0.8);
-    color: var(--subtitle);
-    transition: .3s;
- }
- header .icon-menu:hover, header button.mode:hover{
-    border: 1px solid rgba(130, 116, 48, 0.8);
-    color: var(--title);
-    background-color: #cd624b26;
- }
+/* ===========================  2. iconButton ================================  */
+header .icon-menu,
+header button.mode {
+  background-color: var(--bgHeader);
+  height: 2.4rem;
+  width: 2.4rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid rgba(84, 79, 55, 0.8);
+  color: var(--subtitle);
+  transition: 0.3s;
+}
+header .icon-menu:hover,
+header button.mode:hover {
+  border: 1px solid rgba(130, 116, 48, 0.8);
+  color: var(--title);
+  background-color: #cd624b26;
+}
+header .icon-close {
+  transition: 0.3s;
+  color: var(--subtitle);
+  font-weight: bold;
+}
+header .icon-close:hover {
+  transform: scale(1.1) rotate(180deg);
+  color: red;
+}
 
-/* ==================  pop up ======================= */
+/* ===========================  3. pop up ================================  */
 header .fixed {
   position: fixed;
   inset: 0px;
@@ -59,19 +78,19 @@ header .fixed {
   z-index: 100;
 }
 
-@keyframes popup{
-    0%{
-        transform: scale(0);
-        opacity: 0.1;
-        background-color: #b49a6da0;
-    }
-    50%{
-        transform: scale(1.1);
-        opacity: 0.5;
-    }
-    100%{
-        transform: scale(1);
-    }
+@keyframes popup {
+  0% {
+    transform: scale(0);
+    opacity: 0.1;
+    background-color: #b49a6da0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 header .fixed ul.modal {
@@ -79,27 +98,27 @@ header .fixed ul.modal {
   border-radius: 1rem;
   box-shadow: 0.25px 1px 1px rgba(169, 98, 98, 0.544);
   width: 85%;
-  margin: 2rem auto 0 auto ;
+  margin: 2rem auto 0 auto;
   padding: 2rem;
   background-color: var(--secondary);
-  animation: popup 1.5s  ease;
+  animation: popup 1.5s ease;
 }
 
-header .fixed ul.modal li{
-    border-bottom: 1px solid var(--border);
-    padding: .7rem 0;
+header .fixed ul.modal li {
+  border-bottom: 1px solid var(--border);
+  padding: 0.7rem 0;
 }
-header .fixed ul.modal li:first-child{
-    border-bottom: none;
-    text-align: right;
-    padding: 0;
-    margin-bottom: -10px;
-    
+header .fixed ul.modal li:first-child {
+  border-bottom: none;
+  text-align: right;
+  padding: 0;
+  margin-bottom: -10px;
 }
-header .fixed ul.modal li:last-child{
-    border-bottom: none;
+header .fixed ul.modal li:last-child {
+  border-bottom: none;
 }
 
+/* ===========================  4. Media Query ================================  */
 @media (max-width: 768px) {
   header nav {
     display: none;
