@@ -6,3 +6,9 @@ section.hero .left-article{
     flex-grow: 1;
 }
 
+
+
+section.hero .profile{
+    width: 20%;
+}
+
