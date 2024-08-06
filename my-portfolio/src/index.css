@@ -1,7 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 :root {
   --primary: #000000;
+  --secondary: rgb(25, 25, 26);
+  --border: rgba(63, 63, 70, 0.4);
+}
+html,
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: var(--primary);
+  color: #fff;
+}
+.container {
+  border: 1px solid var(--border);
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--secondary);
+}
+
+.divider {
+  border-bottom: 2px solid var(--border);
+  margin: 1rem 0;
 }
