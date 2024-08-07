@@ -4,88 +4,80 @@
 3. Right section ==> Cards
 */
 
-main.flex{
-    gap: 3rem;
-    align-items: start;
+main.flex {
+  gap: 3rem;
+  align-items: start;
 }
-
 
 /* ===========================  2. left section ==> Buttons ================================  */
 
-main section.left-section{
-    flex-direction: column;
-    gap: 1rem;
-
+main section.left-section {
+  flex-direction: column;
+  gap: 1rem;
 }
 
-main section.left-section button{
-    width: 10rem;
-    padding: 1rem 2rem;
-    text-align: center;
-    border-radius: 20px;
-    background-color: rgba(36, 37, 46, 0.8);
-    opacity: 0.7;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: 0.1s;
+main section.left-section button {
+  width: 10rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(36, 37, 46, 0.8);
+  opacity: 0.7;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s;
 }
-main section.left-section button:hover{
-    opacity: 1;
-
+main section.left-section button:hover {
+  opacity: 1;
 }
-main section.left-section button:first-child:focus{
-    opacity: 1;
-    border: 1px solid var(--blue);
+main section.left-section button:first-child:focus {
+  opacity: 1;
+  border: 1px solid var(--blue);
 }
-main section.left-section button:focus{
-    opacity: 1;
-    border: 1px solid var(--blue);
+main section.left-section button:focus {
+  opacity: 1;
+  border: 1px solid var(--blue);
 }
 
 /* ===========================  3. Right section ==> Cards ================================  */
 
-main section.right-section{
-    flex-grow: 1;
+main section.right-section {
+  flex-grow: 1;
 }
 
-main section.right-section .card li{
-    cursor: pointer;
-    color: var(--subtitle);
-    margin-right: 1rem;
-    transition: transform 0.2s, color 0.2s;
+main section.right-section .card {
+  max-width: 15rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
 }
-main section.right-section .card li:hover{
-    color: var(--title);
-    /* font-size: 2rem; */
-    transform: scale(1.5);
+main section.right-section .card img {
+  width: 100%;
+  border-radius: 20px;
+}
+main section.right-section .card .box {
+  width: 100%;
+  padding: 1rem 0.5rem;
+}
+main section.right-section .card .box .title {
+  color: var(--title);
+}
+main section.right-section .card .box .sub-title {
+  color: var(--subtitle);
+  padding: 1rem 0;
 }
 
+main section.right-section .card li {
+  cursor: pointer;
+  color: var(--subtitle);
+  margin-right: 1rem;
+  transition: transform 0.2s, color 0.2s;
+}
+main section.right-section .card li:hover {
+  color: var(--title);
+  transform: scale(1.5);
+}
 
-main section.right-section .card{
-    max-width: 15rem;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-}
-main section.right-section .card img{
-    width: 100%;
-    border-radius: 20px;
-}
-main section.right-section .card .box{
-    width: 100%;
-    padding: 1rem 0.5rem;
-}
-main section.right-section .card .box .title{
-    color: var(--title);
-}
-main section.right-section .card .box .sub-title{
-    color: var(--subtitle);
-    padding: 1rem 0;
-}
-main .card .box .icons{
-    /* justify-content: space-between; */
-    
-}
-main .card .box .icons li:last-child{
-    margin-left: auto;
-    margin-right: 0;
+main .card .box .icons li:last-child {
+  margin-left: auto;
+  margin-right: 0;
 }
