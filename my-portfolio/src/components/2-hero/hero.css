@@ -1,18 +1,41 @@
-
-section.hero{
-    margin: 3rem 0;
+section.hero {
+  margin: 3rem 0;
 }
-section.hero .left-article{
-    flex-grow: 1;
-}
+/* ===========================  1. Left article ================================  */
 
-
-
-section.hero .profile{
-    width: 20%;
-    border-radius: 10%;
-    border: 1px solid orange;
-    padding: 3px;
-    box-shadow: 2px 2px 30px rgb(149, 112, 144) inset;
+section.hero .left-article {
+  flex-grow: 1;
 }
 
+section.hero .profile {
+  width: 20%;
+  border-radius: 10%;
+  border: 1px solid orange;
+  padding: 3px;
+  box-shadow: 2px 2px 30px rgb(149, 112, 144) inset;
+}
+
+section.hero .title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 1.5rem 0;
+  color: var(--title);
+}
+section.hero .sub-title {
+  color: var(--subtitle);
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+section.hero .icons {
+  gap: 1rem;
+  font-size: 1.4rem;
+  color: var(--subtitle);
+}
+section.hero .icon:hover {
+    font-size: 1.8rem;
+    color: var(--icon-hover);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+/* ===========================  2. Right article ================================  */
