@@ -37,12 +37,15 @@ section.hero .icons {
   gap: 1rem;
   font-size: 1.4rem;
   color: var(--subtitle);
+
+}
+section.hero .icons div{
+  cursor: pointer;
+  transition: transform .2s, color 2s;
 }
 section.hero .icon:hover {
-    font-size: 1.8rem;
-    color: var(--icon-hover);
-    transition: 0.3s;
-    cursor: pointer;
+  color: var(--icon-hover);
+    transform: scale(1.5);
   }
 
 /* ===========================  2. Right article ================================  */
