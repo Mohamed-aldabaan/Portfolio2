@@ -76,7 +76,7 @@ header .fixed {
   inset: 0px;
   background-color: rgba(38, 37, 39, 0.8);
   z-index: 100;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(3.5px);
 }
 
 @keyframes popup {
