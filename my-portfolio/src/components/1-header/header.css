@@ -25,14 +25,14 @@ header ul li a {
   /* display: inline-block;  wenn scale ändern möchte*/
   color: var(--title);
   opacity: 0.8;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   /* transition: transform 0.3s ease; */
 }
 header ul li a:hover {
   opacity: 1;
   color: var(--blue);
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   /* transform: scale(0.5); */
 }
 
@@ -76,6 +76,7 @@ header .fixed {
   inset: 0px;
   background-color: rgba(38, 37, 39, 0.8);
   z-index: 100;
+  backdrop-filter: blur(4px);
 }
 
 @keyframes popup {
