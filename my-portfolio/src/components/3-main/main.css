@@ -57,7 +57,7 @@ main section.right-section .card li{
 main section.right-section .card li:hover{
     color: var(--title);
     /* font-size: 2rem; */
-    scale: 2;
+    scale: 1.5;
 }
 
 
