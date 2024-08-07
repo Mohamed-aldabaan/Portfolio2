@@ -11,7 +11,7 @@ export default function Main() {
         <button>React</button>
         <button>Node & Express</button>
       </section>
-      <section className='right-section border'>
+      <section className='right-section '>
         <article className='card'>
           <img src="/p1.jpg" alt="" />
           <div className="box">
@@ -20,7 +20,7 @@ export default function Main() {
             <div className="flex icons">
               <li > <a href="" className="icon-link"></a> </li>
               <li > <a href="https://github.com/Mohamed-aldabaan" className="icon-github-square" target='_blank'></a> </li>
-              <li > more <a href="" className="icon-arrow-right"></a></li>
+              <li className='flex'> more <a href="" className="icon-arrow-right"></a></li>
             </div>
           </div>
         </article>
