@@ -76,8 +76,8 @@ main section.right-section .card li:hover {
   color: var(--title);
   transform: scale(1.5);
 }
-
 main .card .box .icons li:last-child {
   margin-left: auto;
   margin-right: 0;
+  color: var(--blue);
 }
