@@ -1,5 +1,12 @@
 /* Table of Content
+ 1. Main
+ 2. Form section
+ 3. Animation section 
+ 4. Responsive Design ==> media query
 */
+
+
+/* ===========================  1. Main ================================  */
 
 section.contact.flex{
     align-items: start;
@@ -18,12 +25,7 @@ section.contact p{
 }
 
 
-
-
-
-
-
-
+/* ===========================  2. Form section  ================================  */
 
 section.contact form.flex{
     flex-direction: column;
@@ -69,7 +71,10 @@ section.contact form.flex .submit{
     transition: 0.1s;
 }
 
+  /* ===========================  3. Animation section  ================================  */
 
+
+  /* ===========================  4. Responsive Design ==> media query ================================  */
 
 @media (max-width: 1000px){
     section.contact.flex .flex{
