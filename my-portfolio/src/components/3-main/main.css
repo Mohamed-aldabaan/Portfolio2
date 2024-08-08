@@ -42,7 +42,9 @@ main section.left-section button:focus {
 /* ===========================  3. Right section ==> Cards ================================  */
 
 main section.right-section {
-  flex-grow: 1;
+  /* flex-grow: .5; */
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 main section.right-section .card {
@@ -55,7 +57,7 @@ main section.right-section .card {
 }
 main section.right-section .card:hover {
     border: 1px solid var(--blue);
-    transform: scale(1.03) rotate(-.25deg);
+    transform: scale(1.03) rotate(-.4deg);
     opacity: 1;
 
   }
