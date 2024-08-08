@@ -2,6 +2,7 @@
 1. Main
 2. Left section ==> Buttons
 3. Right section ==> Cards
+4. Responsive Design ==> media query
 */
 
 main.flex {
@@ -45,6 +46,7 @@ main section.right-section {
   /* flex-grow: .5; */
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 main section.right-section .card {
@@ -95,4 +97,28 @@ main .card .box .icons li:last-child {
 main .card .box .icons li:last-child a{
     align-self: end;
     margin-left: .3rem;
+  }
+
+
+
+  /* ===========================  4. Responsive Design ==> media query ================================  */
+  @media (max-width:600px){
+    main.flex{
+      flex-direction: column;
+    }
+    main section.left-section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    main section.right-section .card{
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 530px){
+    main section.left-section button{
+        width: auto;
+        padding: .5rem .8rem ;
+      }
   }
