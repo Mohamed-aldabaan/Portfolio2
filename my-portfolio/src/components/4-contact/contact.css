@@ -1,0 +1,48 @@
+/* Table of Content
+*/
+
+section.contact.flex{
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+section.contact .icon-envelope{
+    color: rgb(103, 245, 209, 81%);
+    padding: 0rem;
+    font-size: 1.7rem;
+}
+section.contact p{
+    font-size: 1.2rem;
+    color: var(--subtitle);
+}
+
+
+
+
+
+
+
+
+
+section.contact form.flex{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+section.contact form.flex input, textarea{
+    all: unset;
+    /* color: black; */
+    background-color: rgba(60, 54, 54, 0.446);
+    width: 20rem;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+section.contact form.flex input:focus, textarea:focus{
+    border: 1px solid rgba(103, 245, 210, 0.377);
+}
+section.contact form.flex input:hover, textarea:hover{
+    border: 1px solid rgba(103, 245, 210, 0.377);
+}
