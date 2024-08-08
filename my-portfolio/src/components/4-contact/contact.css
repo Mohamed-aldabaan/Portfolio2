@@ -85,6 +85,7 @@ section.contact form.flex .submit{
     }
     section.contact form.flex input, textarea{
         width: 100%;
+        padding: .5rem 0;
     }
    
 }

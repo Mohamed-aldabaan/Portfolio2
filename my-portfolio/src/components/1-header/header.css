@@ -33,6 +33,7 @@ header ul li a:hover {
   opacity: 1;
   color: var(--blue);
   font-size: 1.1rem;
+  cursor: pointer;
   /* transform: scale(0.5); */
 }
 
