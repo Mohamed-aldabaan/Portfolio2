@@ -68,3 +68,18 @@ section.contact form.flex .submit{
     text-transform: uppercase;
     transition: 0.1s;
 }
+
+
+
+@media (max-width: 1000px){
+    section.contact.flex .flex{
+        flex-direction: column;
+    }
+    section.contact .flex {
+        width: 100%;
+    }
+    section.contact form.flex input, textarea{
+        width: 100%;
+    }
+   
+}
