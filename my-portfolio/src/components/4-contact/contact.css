@@ -35,9 +35,12 @@ section.contact form.flex input, textarea{
     all: unset;
     /* color: black; */
     background-color: rgba(60, 54, 54, 0.446);
+    border: 1px solid rgba(60, 54, 54, 0.446);
     width: 20rem;
     padding: .5rem;
     border-radius: 5px;
+    transition: .4s;
+    font-size: 1.2rem;
 }
 
 section.contact form.flex input:focus, textarea:focus{
@@ -45,4 +48,23 @@ section.contact form.flex input:focus, textarea:focus{
 }
 section.contact form.flex input:hover, textarea:hover{
     border: 1px solid rgba(103, 245, 210, 0.377);
+}
+
+
+section.contact form.flex textarea {
+    white-space: pre-wrap; /* Behandelt Leerzeichen wie im normalen Text, umbrechen erlaubt */
+    overflow-wrap: break-word; /* Für moderne Browser, sorgt dafür, dass lange Wörter umgebrochen werden */
+    min-height: 5rem;
+    resize: vertical;
+}
+
+section.contact form.flex .submit{
+    width: 10rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(36, 37, 46, 0.8);
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s;
 }
