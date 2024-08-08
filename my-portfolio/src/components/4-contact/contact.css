@@ -27,15 +27,20 @@ section.contact p{
 
 /* ===========================  2. Form section  ================================  */
 
+
+section.contact div.flex{
+    width: 100%;
+}
+
 section.contact form.flex{
     flex-direction: column;
     justify-content: start;
     align-items: start;
     gap: 1rem;
+    flex-grow: 1;
 }
 section.contact form.flex input, textarea{
     all: unset;
-    /* color: black; */
     background-color: rgba(60, 54, 54, 0.446);
     border: 1px solid rgba(60, 54, 54, 0.446);
     width: 20rem;
