@@ -47,14 +47,15 @@ main section.right-section {
 
 main section.right-section .card {
   max-width: 15rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(84, 79, 55, 0.8);
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.031)); */
   border-radius: 20px;
   opacity: .6;
-  transition: .8s;
+  transition: .5s;
 }
 main section.right-section .card:hover {
     border: 1px solid var(--blue);
-    transform: scale(1.04);
+    transform: scale(1.03) rotate(-.25deg);
     opacity: 1;
 
   }
