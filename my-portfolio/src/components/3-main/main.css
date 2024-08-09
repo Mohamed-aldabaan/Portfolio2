@@ -62,10 +62,10 @@ main section.right-section .card:hover {
 
   }
 main section.right-section .card img {
-  width: 100%;
-  height: auto;
-  /* width: 238px; 
-  height: 167px; */
+  /* width: 100%;
+  height: auto; */
+  width: 238px; 
+  height: 167px;
   border-radius: 20px;
 }
 main section.right-section .card .box {
@@ -121,5 +121,9 @@ main .card .box .icons li:last-child a{
     main section.left-section button{
         width: auto;
         padding: .5rem .8rem ;
+      }
+      main section.right-section .card img {
+        width: 100%;
+        height: auto;
       }
   }

@@ -18,9 +18,7 @@ export default function Main() {
     <main className="flex">
       <section className="left-section  flex">
         <button
-          onClick={() => {
-            handleclick("all");
-          }}
+          onClick={() => handleclick("all")}
           className={currentActive === "all" ? "active" : null}
         >
           All Projects
@@ -52,7 +50,9 @@ export default function Main() {
         <button
           onClick={() => {
             setCurrentActive("node");
-            setArr(myprojects.filter((item) => item.category === "node & express"));
+            setArr(
+              myprojects.filter((item) => item.category === "node & express")
+            );
           }}
           className={currentActive === "node" ? "active" : null}
         >
