@@ -32,7 +32,7 @@ main section.left-section button {
 main section.left-section button:hover {
   opacity: 1;
 }
-main section.left-section button:first-child:focus {
+main section.left-section button:first-child {
   opacity: 1;
   border: 1px solid var(--blue);
 }

@@ -4,7 +4,7 @@ export default function Main() {
   return (
     <main className="flex">
       <section className="left-section  flex">
-        <button>All Projects</button>
+        <button className="active">All Projects</button>
         <button>HTML & CSS</button>
         <button>JavaScript</button>
         <button>React</button>
