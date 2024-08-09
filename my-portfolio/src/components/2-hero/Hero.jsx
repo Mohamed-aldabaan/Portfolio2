@@ -5,7 +5,7 @@ function Hero() {
     <section className="hero flex">
       <article className="left-article">
         <div className="profile-parent">
-          <img className="profile" src="/profil.jpg" alt="profilbild" />
+          <img className="profile" src="/p31.webp" alt="profilbild" />
           <h2 className="title">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
             tempore odio architecto expedita, praesentium nulla magni reiciendis

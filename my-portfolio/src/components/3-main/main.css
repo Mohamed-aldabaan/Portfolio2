@@ -64,8 +64,8 @@ main section.right-section .card:hover {
 main section.right-section .card img {
   width: 100%;
   height: auto;
-  width: 238px; 
-  height: 167px;
+  /* width: 238px; 
+  height: 167px; */
   border-radius: 20px;
 }
 main section.right-section .card .box {
