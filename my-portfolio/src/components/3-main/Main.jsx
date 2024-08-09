@@ -38,6 +38,7 @@ export default function Main() {
         <button
           onClick={() => {
             setCurrentActive("react");
+            setArr(myprojects.filter((item) => item.category === "react"));
           }}
           className={currentActive === "react" ? "active" : null}
         >
@@ -46,6 +47,7 @@ export default function Main() {
         <button
           onClick={() => {
             setCurrentActive("node");
+            setArr(myprojects.filter((item) => item.category === "node & express"));
           }}
           className={currentActive === "node" ? "active" : null}
         >

@@ -19,10 +19,10 @@ function Hero() {
             ullam dolorem
           </p>
           <div className="icons flex">
-            <div className="icon icon-github-square"></div>
-            <div className="icon icon-linkedin-square"></div>
-            <div className="icon icon-instagram"></div>
-            <div className="icon icon-x"></div>
+            <a className="icon icon-github-square"></a>
+            <a className="icon icon-linkedin-square"></a>
+            <a className="icon icon-instagram"></a>
+            <a className="icon icon-x"></a>
           </div>
         </div>
       </article>
