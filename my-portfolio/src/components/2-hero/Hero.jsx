@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./hero.css";
 
 function Hero() {
@@ -6,7 +5,7 @@ function Hero() {
     <section className="hero flex">
       <article className="left-article">
         <div className="profile-parent">
-          <img className="profile" src="/profil.jpg" alt="profil-bild" />
+          <img className="profile" src="/profil.jpg" alt="profilbild" />
           <h2 className="title">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
             tempore odio architecto expedita, praesentium nulla magni reiciendis

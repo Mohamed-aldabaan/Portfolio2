@@ -5,13 +5,21 @@ import "./main.css";
 export default function Main() {
   const [currentActive, setCurrentActive] = useState("all");
   const [arr, setArr] = useState(myprojects);
+
+  const handleclick = (category) => {
+    setCurrentActive(category);
+    if (category === "all") {
+      setArr(myprojects);
+    } else {
+      setArr(myprojects.filter((item) => item.category === category));
+    }
+  };
   return (
     <main className="flex">
       <section className="left-section  flex">
         <button
           onClick={() => {
-            setCurrentActive("all");
-            setArr(myprojects);
+            handleclick("all");
           }}
           className={currentActive === "all" ? "active" : null}
         >
@@ -19,8 +27,7 @@ export default function Main() {
         </button>
         <button
           onClick={() => {
-            setCurrentActive("html & css");
-            setArr(myprojects.filter((item) => item.category === "html & css"));
+            handleclick("html & css");
           }}
           className={currentActive === "html & css" ? "active" : null}
         >
@@ -28,8 +35,7 @@ export default function Main() {
         </button>
         <button
           onClick={() => {
-            setCurrentActive("javascript");
-            setArr(myprojects.filter((item) => item.category === "javascript"));
+            handleclick("javascript");
           }}
           className={currentActive === "javascript" ? "active" : null}
         >
@@ -37,8 +43,7 @@ export default function Main() {
         </button>
         <button
           onClick={() => {
-            setCurrentActive("react");
-            setArr(myprojects.filter((item) => item.category === "react"));
+            handleclick("react");
           }}
           className={currentActive === "react" ? "active" : null}
         >
