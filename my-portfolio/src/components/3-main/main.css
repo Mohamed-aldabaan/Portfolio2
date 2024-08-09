@@ -32,14 +32,11 @@ main section.left-section button {
 main section.left-section button:hover {
   opacity: 1;
 }
-main section.left-section button:first-child {
+main section.left-section button.active {
   opacity: 1;
   border: 1px solid var(--blue);
 }
-main section.left-section button:focus {
-  opacity: 1;
-  border: 1px solid var(--blue);
-}
+
 
 /* ===========================  3. Right section ==> Cards ================================  */
 
