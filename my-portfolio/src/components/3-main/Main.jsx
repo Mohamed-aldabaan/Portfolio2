@@ -4,12 +4,14 @@ import "./main.css";
 
 export default function Main() {
   const [currentActive, setCurrentActive] = useState("all");
+  const [arr, setArr] = useState(myprojects);
   return (
     <main className="flex">
       <section className="left-section  flex">
         <button
           onClick={() => {
             setCurrentActive("all");
+            setArr(myprojects);
           }}
           className={currentActive === "all" ? "active" : null}
         >
@@ -18,6 +20,7 @@ export default function Main() {
         <button
           onClick={() => {
             setCurrentActive("html & css");
+            setArr(myprojects.filter((item) => item.category === "html & css"));
           }}
           className={currentActive === "html & css" ? "active" : null}
         >
@@ -26,6 +29,7 @@ export default function Main() {
         <button
           onClick={() => {
             setCurrentActive("javascript");
+            setArr(myprojects.filter((item) => item.category === "javascript"));
           }}
           className={currentActive === "javascript" ? "active" : null}
         >
@@ -49,7 +53,7 @@ export default function Main() {
         </button>
       </section>
       <section className="right-section flex">
-        {myprojects.map((item) => (
+        {arr.map((item) => (
           <article key={item.id} className="card">
             <img src={item.image} alt={`image-${item.title}`} />
             <div className="box">
