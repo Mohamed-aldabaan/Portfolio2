@@ -99,7 +99,7 @@ header .fixed {
 header .fixed ul.modal {
   border: 1px solid var(--border);
   border-radius: 1rem;
-  box-shadow: 0.25px 1px 1px rgba(169, 98, 98, 0.54);
+  box-shadow: 0.25px 1px 1px rgba(169, 98, 98, 0.55);
   width: 85%;
   margin: 2rem auto 0 auto;
   padding: 2rem;
