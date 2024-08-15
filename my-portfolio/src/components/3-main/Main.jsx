@@ -80,8 +80,7 @@ export default function Main() {
                   ></a>{" "}
                 </li>
                 <li className="flex">
-                  {" "}
-                  more <a href="" className="icon-arrow-right"></a>
+                     more <a href="" className="icon-arrow-right"></a>
                 </li>
               </div>
             </div>
