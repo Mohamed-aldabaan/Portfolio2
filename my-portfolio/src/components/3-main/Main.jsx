@@ -79,8 +79,8 @@ export default function Main() {
                     target="_blank"
                   ></a>{" "}
                 </li>
-                <li className="flex">
-                     more <a href="" className="icon-arrow-right"></a>
+                <li className="flex " style={{ marginRight: "1.5rem" }}>
+                   <a href="https://google.com" target="_blank">mehr <span className="icon-arrow-right"></span></a>
                 </li>
               </div>
             </div>
