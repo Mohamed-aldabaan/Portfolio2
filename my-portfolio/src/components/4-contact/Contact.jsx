@@ -3,7 +3,7 @@ export default function Contact() {
   return (
     <section className="contact flex">
       <h1 className='icon-envelope'> contact me</h1>
-      <p> Let us get in touch! Send me a message:</p>
+      <p> Lassen Sie uns in Kontakt treten! Senden Sie mir eine Nachricht:</p>
       <div className="flex">
         <form action="" className="flex">
           <input type="text" name="text" id="text" placeholder='Your name' autoComplete="off" required />
