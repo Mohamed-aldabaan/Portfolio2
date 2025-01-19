@@ -15,6 +15,7 @@ function App() {
       <Contact />
       <div className="divider" />
       <Footer />
+      <button className="icon-keyboard_arrow_up scroll2up"></button>
     </div>
   );
 }
