@@ -34,3 +34,19 @@ section.zertifikat-flex{
 
 
 
+.zertifikat-container {
+  width: 100%;
+  height: 100%;
+}
+
+.zertifikat-preview {
+  cursor: pointer;
+  width: 300px; /* Vorschau-Breite */
+  height: 400px; /* Vorschau-Höhe */
+  overflow: hidden;
+}
+
+.zertifikat-preview canvas {
+  width: 100%;
+  height: auto;
+}
