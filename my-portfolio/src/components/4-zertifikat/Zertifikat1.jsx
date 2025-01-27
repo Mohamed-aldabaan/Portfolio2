@@ -18,7 +18,7 @@ const PDFGallery = () => {
   const [selectedPdf, setSelectedPdf] = useState(null);
   const [error, setError] = useState(null);
   const pdfFiles = [
-    {filePfad: "https://portfolio2-n1oimi1f0-mohameds-projects-35757f81.vercel.app/pdf/dci.pdf", title: "DCI Zertifikat"},
+    {filePfad: "/pdf/dci.pdf", title: "DCI Zertifikat"},
     {filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis"},
     {filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis"},
     {filePfad: "/pdf/dci.pdf", title: "Zertifikat 1"},
