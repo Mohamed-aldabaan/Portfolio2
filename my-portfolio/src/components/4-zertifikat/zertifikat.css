@@ -1,6 +1,12 @@
+div.flex-zertifikat{
+  align-items: start;
+  gap: 3rem;
+}
 section.zertifikat-flex{
-    gap: 3rem;
-    align-items: start;
+  /* display: flex; */
+  flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
   h1.left-section{
     font-size: 2.5rem;
@@ -8,45 +14,27 @@ section.zertifikat-flex{
     min-width: 14rem;
   }
 .zertifikat-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
+    
+    gap: 1rem;
     justify-content: center;
-  
-}
-.zertifikat-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  justify-content: center;
-  width: 15rem;
-
+    
 }
 .zertifikat-item{
-    width: 20rem;
+  max-width: 20rem;
     border: 1px solid rgba(84, 79, 55, 0.8);
     border-radius: 20px;
     opacity: 0.6;
     transition: 0.5s;
-    height: 20rem;
-    
+    cursor: pointer;
 }
+.zertifikat-item canvas {
+  height: 260px !important; /* Höhe wird automatisch angepasst */
+  
+  border: 1px solid rgba(84, 79, 55, 0.8); /* Optional: Rahmen hinzufügen */
+  border-radius: 20px 20px 0 0;
 
-
-
-.zertifikat-container {
-  width: 100%;
-  height: 100%;
 }
-
-.zertifikat-preview {
-  cursor: pointer;
-  width: 300px; /* Vorschau-Breite */
-  height: 400px; /* Vorschau-Höhe */
-  overflow: hidden;
-}
-
-.zertifikat-preview canvas {
-  width: 100%;
-  height: auto;
+.zertifikat-title{
+  color: var(--title);
+  padding: 2rem 0.5rem;
 }
