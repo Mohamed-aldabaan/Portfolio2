@@ -45,7 +45,7 @@ const PDFGallery = () => {
                   setError(err.message);
                 }}
               >
-                <Page pageNumber={1} width={240} height={400}/>
+                <Page pageNumber={1} width={240}/>
               </Document>
               <div className="zertifikat-title">{file.title}</div>
 
