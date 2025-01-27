@@ -18,10 +18,10 @@ const PDFGallery = () => {
   const [selectedPdf, setSelectedPdf] = useState(null);
   const [error, setError] = useState(null);
   const pdfFiles = [
-    {filePfad: "/dci.pdf", title: "DCI Zertifikat"},
-    {filePfad: "/arbeitszeugnis.pdf", title: "Arbeitszeugnis"},
-    {filePfad: "/arbeitszeugnis.pdf", title: "Arbeitszeugnis"},
-    {filePfad: "/dci.pdf", title: "Zertifikat 1"},
+    {filePfad: "/pdf/dci.pdf", title: "DCI Zertifikat"},
+    {filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis"},
+    {filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis"},
+    {filePfad: "/pdf/dci.pdf", title: "Zertifikat 1"},
     
     
   ];
