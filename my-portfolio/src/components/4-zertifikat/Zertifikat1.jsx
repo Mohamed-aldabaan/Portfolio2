@@ -28,7 +28,8 @@ const PDFGallery = () => {
 
   return (
     <div className="flex flex-zertifikat">
-      {/* Galerie* /}
+      {/* Galerie */}
+
       <h1 className="left-section">Zertifikat</h1>
 
       <section className="flex zertifikat-flex"> 
