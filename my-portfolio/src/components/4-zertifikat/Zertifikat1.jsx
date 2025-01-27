@@ -22,8 +22,6 @@ const PDFGallery = () => {
     {filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis"},
     {filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis"},
     {filePfad: "/pdf/dci.pdf", title: "Zertifikat 1"},
-    
-    
   ];
 
   return (
