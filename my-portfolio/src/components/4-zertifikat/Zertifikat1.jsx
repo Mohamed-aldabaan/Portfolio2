@@ -20,11 +20,10 @@ const PDFGallery = () => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const pdfFiles = [
-    { filePfad: "/pdf/dci.pdf", title: "DCI Zertifikat" },
-    { filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis" },
-    { filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis" },
-    { filePfad: "/pdf/dci.pdf", title: "Zertifikat 1" },
-    { filePfad: "/pdf/dci.pdf", title: "Zertifikat 1" },
+    { filePfad: "/pdf/dci-de.pdf", title: "DCI Zertifikat - de" },
+    { filePfad: "/pdf/dci-en.pdf", title: "DCI Zertifikat - en" },
+    { filePfad: "/pdf/arbeitszeugnis-de.pdf", title: "Arbeitszeugnis - de" },
+    { filePfad: "/pdf/arbeitszeugnis-en.pdf", title: "Arbeitszeugnis - en" },
   ];
 
   const onDocumentLoadSuccess = ({ numPages }) => {
