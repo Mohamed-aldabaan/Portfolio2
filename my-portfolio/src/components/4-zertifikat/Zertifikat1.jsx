@@ -17,13 +17,20 @@ pdfjs.GlobalWorkerOptions.workerSrc =
 const PDFGallery = () => {
   const [selectedPdf, setSelectedPdf] = useState(null);
   const [error, setError] = useState(null);
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
   const pdfFiles = [
-    {filePfad: "/pdf/dci.pdf", title: "DCI Zertifikat"},
-    {filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis"},
-    {filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis"},
-    {filePfad: "/pdf/dci.pdf", title: "Zertifikat 1"},
-    {filePfad: "/pdf/dci.pdf", title: "Zertifikat 1"},
+    { filePfad: "/pdf/dci.pdf", title: "DCI Zertifikat" },
+    { filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis" },
+    { filePfad: "/pdf/arbeitszeugnis.pdf", title: "Arbeitszeugnis" },
+    { filePfad: "/pdf/dci.pdf", title: "Zertifikat 1" },
+    { filePfad: "/pdf/dci.pdf", title: "Zertifikat 1" },
   ];
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+    setPageNumber(1); // Standardmäßig auf Seite 1 setzen
+  };
 
   return (
     <div className="flex flex-zertifikat">
@@ -31,28 +38,28 @@ const PDFGallery = () => {
 
       <h1 className="left-section">Zertifikat</h1>
 
-      <section className="flex zertifikat-flex"> 
-          {pdfFiles.map((file, index) => (
-            <div
-              key={index}
-              className="zertifikat-item"
-              onClick={() => setSelectedPdf(file.filePfad)}
+      <section className="flex zertifikat-flex">
+        {pdfFiles.map((file, index) => (
+          <div
+            key={index}
+            className="zertifikat-item"
+            onClick={() => setSelectedPdf(file.filePfad)}
+          >
+            <Document
+              file={file.filePfad}
+              onLoadError={(err) => {
+                console.error("Fehler beim Laden:", err);
+                setError(err.message);
+              }}
+              onLoadSuccess={onDocumentLoadSuccess}
             >
-              <Document
-                file={file.filePfad}
-                onLoadError={(err) => {
-                  console.error("Fehler beim Laden:", err);
-                  setError(err.message);
-                }}
-              >
-                <Page pageNumber={1} width={240}/>
-              </Document>
-              <div className="zertifikat-title">{file.title}</div>
+              <Page pageNumber={1} width={240} />
+            </Document>
+            <div className="zertifikat-title">{file.title}</div>
 
-              {error && <p style={{ color: "red" }}>Fehler: {error}</p>}
-            </div>
-          ))}
-        
+            {error && <p style={{ color: "red" }}>Fehler: {error}</p>}
+          </div>
+        ))}
       </section>
 
       {/* Vorschau */}
@@ -65,18 +72,35 @@ const PDFGallery = () => {
             width: "100%",
             height: "100%",
             backgroundColor: "rgba(0, 0, 0, 0.8)",
+            overflowY: "auto", // Ermöglicht das Scrollen, wenn das Dokument zu groß ist
           }}
         >
-          <div style={{ margin: "50px auto", width: "800px" }}>
-            <button onClick={() => setSelectedPdf(null)}>Schließen</button>
+          <div style={{ margin: "30px auto", width: "800px" }}>
+            <button
+              onClick={() => setSelectedPdf(null)}
+              style={{ marginBottom: "10px" }}
+            >
+              Schließen
+            </button>
             <Document
               file={selectedPdf}
               onLoadError={(err) => {
                 console.error("Fehler beim Laden der Vorschau:", err);
                 setError(err.message);
               }}
+              onLoadSuccess={onDocumentLoadSuccess}
             >
-              <Page pageNumber={1} width={800} />
+              {Array.from(new Array(numPages), (el, index) => (
+                <div
+                  key={index}
+                  style={{
+                    marginBottom: "20px",
+                    padding: "10px",
+                  }}
+                >
+                  <Page pageNumber={index + 1} width={700} />
+                </div>
+              ))}
             </Document>
           </div>
         </div>
