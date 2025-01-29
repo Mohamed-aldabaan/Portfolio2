@@ -16,19 +16,19 @@ export default function Header() {
       <nav>
         <ul className="flex">
           <li>
-            <a href="">About</a>
+            <a href="#hero">About</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#main">Projects</a>
           </li>
-          <li>
+          {/* <li>
             <a href="">Study</a>
+          </li> */}
+          <li>
+            <a href="#certificates">Certificates</a>
           </li>
           <li>
-            <a href="">Hobbies</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -45,19 +45,19 @@ export default function Header() {
               />
             </li>
             <li>
-              <a href="">About</a>
+              <a href="#hero">About</a>
             </li>
             <li>
-              <a href="">Projects</a>
+              <a href="#main">Projects</a>
             </li>
-            <li>
+            {/* <li>
               <a href="">Study</a>
+            </li> */}
+            <li>
+              <a href="#certificates">Certificates</a>
             </li>
             <li>
-              <a href="">Hobbies</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>

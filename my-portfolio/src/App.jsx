@@ -10,17 +10,16 @@ function App() {
   return (
     <div className="container" id="up">
       <Header />
-      <Hero />
+      <Hero id="hero"/>
       <div className="divider" />
-      <Main />
+      <Main id="main"/>
       <div className="divider" />
-      <PDFGallery />
+      <PDFGallery id="certificates"/>
       <div className="divider" />
-      <Contact />
+      <Contact id="contact"/>
       <div className="divider" />
       <Footer />
       <a href="#up">
-
       <button className="icon-keyboard_arrow_up scroll2up"></button>
       </a>
     </div>

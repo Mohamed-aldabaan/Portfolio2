@@ -2,7 +2,7 @@ import { useState } from "react";
 import myprojects from "../../myprojects";
 import "./main.css";
 
-export default function Main() {
+export default function Main({ id }) {
   const [currentActive, setCurrentActive] = useState("all");
   const [arr, setArr] = useState(myprojects);
 
@@ -15,7 +15,7 @@ export default function Main() {
     }
   };
   return (
-    <main className="flex">
+    <main id={id} className="flex">
       <section className="left-section  flex">
         <button
           onClick={() => handleclick("all")}
@@ -88,3 +88,4 @@ export default function Main() {
     </main>
   );
 }
+

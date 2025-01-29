@@ -14,7 +14,7 @@ import "./zertifikat.css";
 pdfjs.GlobalWorkerOptions.workerSrc =
   "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.worker.min.js";
 
-const PDFGallery = () => {
+const PDFGallery = ({ id }) => {
   const [selectedPdf, setSelectedPdf] = useState(null);
   const [error, setError] = useState(null);
   const [numPages, setNumPages] = useState(null);
@@ -32,7 +32,7 @@ const PDFGallery = () => {
   };
 
   return (
-    <div className="flex flex-zertifikat">
+    <div id={id} className="flex flex-zertifikat">
       {/* Galerie */}
 
       <h1 className="left-section">Zertifikat</h1>

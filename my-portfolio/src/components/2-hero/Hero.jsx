@@ -1,8 +1,8 @@
 import "./hero.css";
 
-function Hero() {
+function Hero({id}) {
   return (
-    <section className="hero flex">
+    <section id={id} className="hero flex">
       <article className="left-article">
         <div className="profile-parent">
           <img className="profile" src="/p31.webp" alt="profilbild" />

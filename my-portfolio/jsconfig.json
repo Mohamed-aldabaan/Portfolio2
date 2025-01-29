@@ -3,7 +3,8 @@
       "target": "es6", // Gibt an, welche ECMAScript-Version verwendet wird
       "module": "commonjs", // Modulsystem, das verwendet wird (z.B. CommonJS, AMD, ES6)
       "checkJs": true, // Aktiviert die Fehlerprüfung in .js-Dateien
-      "jsx": "react-jsx" // Verarbeitet JSX in .js-Dateien, nützlich für React-Projekte
+      "jsx": "react-jsx", // Verarbeitet JSX in .js-Dateien, nützlich für React-Projekte
+      "resolveJsonModule": true,
     },
     "exclude": [
       "node_modules", // Schließt den node_modules-Ordner von der Analyse aus
