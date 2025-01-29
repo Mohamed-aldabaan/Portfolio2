@@ -8,6 +8,6 @@ export default [
 
     { id: 1, 'title': 'WebDev Roadmap', 'image': '/p1.jpg', description: '06.02.2024', category: 'html & css', githupPath:"https://github.com/Mohamed-aldabaan/DCI-Fellow-Program-Plattform", link:"https://developer-roadmaps.vercel.app/" },
 
-    { id: 2, title: 'Rezept-Projekt', image: '/rezept-app.png', description: '02.09.2024', category: 'mern', githupPath:"https://github.com/Mohamed-aldabaan/DCI-Fellow-Program-Plattform", link:"https://github.com/Mohamed-aldabaan/DCI-Fellow-Program-Plattform" },
+    { id: 2, title: 'Rezept-Projekt', image: '/rezept-app.png', description: '02.09.2024', category: 'mern', githupPath:"https://github.com/Mohamed-aldabaan/Rezept-Projekt", link:"https://github.com/Mohamed-aldabaan/DCI-Fellow-Program-Plattform" },
     { id: 7, title: 'Fellow-Program-Plattform', image: '/fellow.png', description: '13.01.2024', category: 'mern', githupPath:"https://github.com/Mohamed-aldabaan/DCI-Fellow-Program-Plattform", link:"https://github.com/Mohamed-aldabaan/DCI-Fellow-Program-Plattform" },
 ]
