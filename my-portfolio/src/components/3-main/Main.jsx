@@ -49,14 +49,14 @@ export default function Main() {
         </button>
         <button
           onClick={() => {
-            setCurrentActive("node");
+            setCurrentActive("mern");
             setArr(
-              myprojects.filter((item) => item.category === "node & express")
+              myprojects.filter((item) => item.category === "mern")
             );
           }}
-          className={currentActive === "node" ? "active" : null}
+          className={currentActive === "mern" ? "active" : null}
         >
-          Node & Express
+          MERN
         </button>
       </section>
       <section className="right-section flex">
@@ -67,20 +67,18 @@ export default function Main() {
               <h1 className="title">{item.title}</h1>
               <p className="sub-title">{item.description}</p>
               <div className="flex icons">
+                {/* <li>
+                  <a href="" className="icon-link"></a>
+                </li> */}
                 <li>
-                  {" "}
-                  <a href="" className="icon-link"></a>{" "}
-                </li>
-                <li>
-                  {" "}
                   <a
-                    href="https://github.com/Mohamed-aldabaan"
+                    href={item.githupPath}
                     className="icon-github-square"
                     target="_blank"
-                  ></a>{" "}
+                  ></a>
                 </li>
                 <li className="flex " style={{ marginRight: "1.5rem" }}>
-                   <a href="https://google.com" target="_blank">mehr <span className="icon-arrow-right"></span></a>
+                   <a href={item.link} target="_blank">mehr <span className="icon-arrow-right"></span></a>
                 </li>
               </div>
             </div>

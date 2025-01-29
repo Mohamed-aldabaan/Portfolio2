@@ -54,6 +54,7 @@ main section.right-section .card {
   border-radius: 20px;
   opacity: .6;
   transition: .5s;
+  height: 340px;
 }
 main section.right-section .card:hover {
     border: 1px solid var(--blue);
