@@ -7,21 +7,19 @@ function Hero() {
         <div className="profile-parent">
           <img className="profile" src="/p31.webp" alt="profilbild" />
           <h2 className="title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            tempore odio architecto expedita, praesentium nulla magni reiciendis
+          Hallo, mein Name ist Mohamed Al Dabaan
           </h2>
           <p className="sub-title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            inventore dolorum quidem nam fugiat ratione tempore ipsa facere
-            velit eius. Quia velit harum maiores! Nesciunt rem minus laudantium
-            eligendi atque voluptatibus minima exercitationem quis optio nam, id
-            ullam dolorem
+          Ich bin ein Webentwickler mit Leidenschaft für moderne Technologien und cleanes Design. Während meiner Weiterbildung habe ich umfassende Erfahrung in Frontend- und Backend-Entwicklung gesammelt.
+          </p>
+          <p className="sub-title">
+          Ich liebe es, intuitive und performante Webanwendungen zu bauen, die echte Probleme lösen. Let’s create something awesome! 🚀
           </p>
           <div className="icons flex">
-            <a className="icon icon-github-square"></a>
-            <a className="icon icon-linkedin-square"></a>
-            <a className="icon icon-instagram"></a>
-            <a className="icon icon-x"></a>
+            <a href="https://github.com/Mohamed-aldabaan" target="_blank" className="icon icon-github-square"></a>
+            <a href="https://www.linkedin.com/in/mohamed-al-dabaan/" target="_blank" className="icon icon-linkedin-square"></a>
+            <a href="" className="icon icon-instagram"></a>
+            <a href="" className="icon icon-x"></a>
           </div>
         </div>
       </article>
