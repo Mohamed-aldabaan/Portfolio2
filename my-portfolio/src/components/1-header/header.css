@@ -15,12 +15,13 @@ header.flex {
 
 header.flex nav {
   background-color: var(--bgHeader);
-  padding: 0.7rem 1rem;
+  padding: 0rem 1rem;
   border-radius: 50px;
-  box-shadow: 1px 1px 3px rgba(169, 98, 98, 0.544);
+  box-shadow: .1px .1px 4px rgba(169, 98, 98, 0.544);
 }
 header ul.flex {
-  gap: 1rem;
+  gap: 2rem;
+  padding: 0 8rem;
 }
 header ul li a {
   /* display: inline-block;  wenn scale ändern möchte*/

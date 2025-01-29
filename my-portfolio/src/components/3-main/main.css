@@ -46,6 +46,7 @@ main section.right-section {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  
 }
 
 main section.right-section .card {

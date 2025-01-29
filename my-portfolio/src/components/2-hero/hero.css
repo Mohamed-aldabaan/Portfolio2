@@ -48,4 +48,18 @@ section.hero .icon:hover {
     transform: scale(1.5);
   }
 
-/* ===========================  2. Right article ================================  */
+/* ===========================  2. Right article 
+================================  */
+
+section.hero .right-article {
+  padding-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  section.hero {
+    flex-direction: column;
+  }
+  /* section.hero .right-article {
+    display: none;
+  } */
+}
