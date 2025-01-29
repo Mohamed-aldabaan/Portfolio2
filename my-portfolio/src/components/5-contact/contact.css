@@ -12,7 +12,7 @@ section.contact.flex{
     align-items: start;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem 0;
 }
 section.contact .icon-envelope{
     color: rgb(103, 245, 209, 81%);
@@ -43,7 +43,7 @@ section.contact form.flex input, textarea{
     all: unset;
     background-color: rgba(60, 54, 54, 0.446);
     border: 1px solid rgba(60, 54, 54, 0.446);
-    width: 20rem;
+    width: 30rem;
     padding: .5rem;
     border-radius: 5px;
     transition: .4s;

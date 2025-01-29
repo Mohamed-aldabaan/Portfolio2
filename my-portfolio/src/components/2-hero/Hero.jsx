@@ -1,4 +1,6 @@
 import "./hero.css";
+import Lottie from "lottie-react";
+import devAnimation from "../../animation/devAnimation.json"
 
 function Hero({id}) {
   return (
@@ -23,7 +25,9 @@ function Hero({id}) {
           </div>
         </div>
       </article>
-      <article className="right-article border">animation</article>
+      <article className="right-article">
+      <Lottie animationData={devAnimation} />
+      </article>
     </section>
   );
 }

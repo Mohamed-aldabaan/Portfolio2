@@ -1,6 +1,7 @@
 div.flex-zertifikat{
   align-items: start;
   gap: 3rem;
+  padding: 1rem 0;
 }
 section.zertifikat-flex{
   /* display: flex; */
