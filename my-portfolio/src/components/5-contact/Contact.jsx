@@ -15,7 +15,8 @@ export default function Contact({id}) {
         </form>
         
         <div className="animation">
-        <Lottie animationData={contactAnimation} />
+        <Lottie  animationData={contactAnimation} /> 
+          {/*animation einmal <=> loop={false} */}
         </div>
       </div>
     </section>
